@@ -20,7 +20,7 @@ const Form = ({ Inputs = dataInputs }) => {
         })}
       </GroupInput>
       <GroupInput>
-        {Inputs.map((input, index) => {
+        {Inputs.map(( input, index) => {
           return (
             <>
               <Input
