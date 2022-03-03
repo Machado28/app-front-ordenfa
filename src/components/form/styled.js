@@ -3,19 +3,19 @@ import Input from "./Input/index";
 
 const Form = styled.form`
   width: 100%;
-  height: 600px;
+  height: 400px;
   display: flex;
   background-color: #fff;
   flex-direction: row;
-  justify-content: space-around;
-  align-content: space-between;
-  margin-top: 4%;
+  justify-content: center;
+  align-content: center;
+  margin: 3% 0 3% 0 ;
 `;
 export default Form;
 
 const GroupInput = styled.div`
   width: 47%;
-  height: 600px;
+  height: 300px;
   display: flex;
   padding-top: 20px;
   flex-direction: row;

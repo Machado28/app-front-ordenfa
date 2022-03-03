@@ -1,35 +1,26 @@
 const dataInputs =[
     {
         type:'text',
-        name:'nome completo',
-        placeHolder:'digite o nome completo'
+        name:'Nome Completo',
+        placeHolder:'Digite o nome completo'
     },
 
        {
         type:'text',
-        name:'nome completo do pai',
-        placeHolder:'digite o nome completo do pai'
+        name:'Nome Completo do Pai',
+        placeHolder:'Digite o nome completo do pai'
     },
     {
         type:'text',
-        name:'nome completo do pai',
-        placeHolder:'digite o nome completo do pai'
+        name:'Nome Completo da Mãe',
+        placeHolder:'Digite o nome completo da mãe'
     },
     {
-        type:'text',
-        name:'nome completo do pai',
-        placeHolder:'digite o nome completo do pai'
+        type:'date',
+        name:'Data de Dascimento',
+        
     },
-    {
-        type:'text',
-        name:'nome completo do pai',
-        placeHolder:'digite o nome completo do pai'
-    },
-     {
-        type:'text',
-        name:'nome completo da mae',
-        placeHolder:'digite o nome completo da mãe'
-    }
-
+    
+    
 ]
 export default dataInputs;

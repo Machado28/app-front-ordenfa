@@ -8,13 +8,17 @@ const Container = styled.div`
   display: flex;
   flex-direction:column;
   flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
 `;
 
 export default Container;
 
 const _Modal = styled(Modal)`
+
  background-color:#ccd3cd !important;
-  margin-top:200px;
+  margin:100px;
+  height:600px;
 `;
 
  

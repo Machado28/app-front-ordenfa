@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import _Input,{InputBox} from "./styled";
+import _Input,{InputBox,Description} from "./styled";
 
 const Input = ({ description, path, type, placeholder }) => {
   return (
-    <InputBox className='input-box'> 
-    <span>{description}</span>
+    <InputBox  > 
+    <Description id>{description}</Description>
       <_Input type={type} placeholder={placeholder} />
     </InputBox>
   );

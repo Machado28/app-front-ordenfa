@@ -8,7 +8,9 @@ const Inscricao = () => {
     <Container>
       <_Modal>
         <Title>FORMULÁRIO DE INSCRIÇÃO</Title>
+        <h5>Home / Inscricao</h5>
         <Form Inputs={dataInputs}/>
+      
       </_Modal>
     </Container>
   );
