@@ -3,7 +3,7 @@ import _Container from "./../Container/styled.js";
 import _Nav from "./../nav/styled";
 const _Header = styled.header`
   width: 100%;
-  height: 130px;
+  height: 90px;
   background-color: #fff;
   box-shadow: 1px 4px 2px #1f1f1f1f;
   display: flex;
@@ -14,7 +14,7 @@ export default _Header;
 
 const Top = styled.div`
   width: 100%;
-  height: 40px;
+  height: 30px;
   background-color: green;
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ const Top = styled.div`
     li {
       margin: 0 5vh 0;
       color: #fff;
-      font-size: 14px;
+      font-size: 10px;
     }
   }
 `;
@@ -36,14 +36,14 @@ const NavTop = styled(_Nav)`
   li {
     a {
       color: #fff !important ;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 `;
 
 const Logo = styled.img`
   width: 150px;
-  height: 50px;
+  height: 40px;
 `;
 
 const Container = styled(_Container)`

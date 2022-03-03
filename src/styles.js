@@ -29,12 +29,13 @@ a{
     background-color:green;
     color:#fff;
     padding:10px 20px;
-    border-radius:2px;
+    border-radius:4px;
+    font-size:13px;
     font-weight:bold;
-     border:2px solid #fff;
+     border:1px solid #fff;
      box-shadow:1px 2px 8px green;
     &:active{
-        border:2px solid #1e5945;
+        border:1px solid #1e5945;
     }
 }
 

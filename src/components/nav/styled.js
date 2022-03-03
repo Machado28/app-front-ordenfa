@@ -21,7 +21,7 @@ const List = styled.li`
   .link {
     color: green;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     border-bottom: 2px solid transparent;
     &:hover {
       border-bottom: 2px solid green;
