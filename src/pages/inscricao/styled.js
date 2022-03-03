@@ -13,7 +13,7 @@ const Container = styled.div`
 export default Container;
 
 const _Modal = styled(Modal)`
- 
+ background-color:#cdd3cd;
   margin-top:200px;
 `;
 
