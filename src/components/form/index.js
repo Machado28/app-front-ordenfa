@@ -15,7 +15,7 @@ const handleOnSubmit=()=>{}
   
   return (
     <_Form>
-      <GroupInput>
+     <GroupInput>
         {Inputs.map((input, index) => {
           return (
             <>

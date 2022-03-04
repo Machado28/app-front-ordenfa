@@ -24,3 +24,34 @@ const dataInputs =[
     
 ]
 export default dataInputs;
+
+
+
+// {
+//         type:'number',
+//         name:'Idade',
+         
+//     },
+
+
+//      {
+//         type:'text',
+//         name:'Número do Documento de Indentificação',
+//         placeHolder:'Ex.: 0080H67L6799LA0'
+//     },
+//     {
+//         type:'date',
+//         name:'Data de emissão do Documento',
+        
+//     },
+//     {
+//         type:'date',
+//         name:'Data de validade do Documento',
+        
+//     },
+//     {
+//         type:'text',
+//         name:'Local da Emissão do Documento',
+        
+//     },
+      

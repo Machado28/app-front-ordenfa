@@ -15,7 +15,6 @@ const Container = styled.div`
 export default Container;
 
 const _Modal = styled(Modal)`
-
  background-color:#ccd3cd !important;
   margin:100px;
   height:600px;
