@@ -7,6 +7,10 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 
 };
+#group-input-box{
+    display:flex;
+    flex-direction:column;
+}
 
 li{
   

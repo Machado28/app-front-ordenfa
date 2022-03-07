@@ -1,36 +1,25 @@
 import styled from "styled-components";
-import Input from "./Input/index";
+import Title from "../Title/styled";
 
-const Form = styled.form`
-  width: 100%;
-  height: 400px;
+const Form_ = styled.form`
+  width: 70%;
+  height: 600px;
   display: flex;
   background-color: #fff;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  margin: 3% 0 3% 0 ;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: 1% 0 1% 0 ;
 `;
-export default Form;
+export default Form_;
 
-const GroupInput = styled.div`
-  width: 47%;
-  height: 300px;
-  display: flex;
-  padding-top: 20px;
-  flex-direction: row;
-  flex-wrap: wrap;
-`;
-
-const Title = styled.h5`
-  width: 100%;
-  height: 40px;
-  background-color: green;
-  color: #fff;
-  display: flex;
-  align-items: center;
-
-  padding-left: 20px;
-`;
-
-export { Title, GroupInput };
+const Title_ = styled(Title)`
+ background-color:#fff;
+ font-size:12px ;
+ font-weight:600;
+ color:#0d630d;
+ padding:12px;
+ border-bottom:1px solid #eee;
+`
+export {Title_};
+ 

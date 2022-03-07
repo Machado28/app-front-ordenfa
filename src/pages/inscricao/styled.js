@@ -10,6 +10,7 @@ const Container = styled.div`
   flex-wrap:wrap;
   align-items:center;
   justify-content:space-between;
+  padding-top:10%;
 `;
 
 export default Container;

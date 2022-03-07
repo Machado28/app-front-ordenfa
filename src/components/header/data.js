@@ -15,12 +15,27 @@ const data = [
     title: "FAQ",
     path: "/faq",
   },
-  {
-    title: "Inscrição",
-    path: "/inscricao",
-  },
 ];
 export default data;
+
+export const dataSubNav = [
+  {
+    path: "/carteiral/licenciado",
+    title: "Licenciado",
+  },
+  {
+    path: "/carteiral/TécnicnoMédio",
+    title: "Técino Médio",
+  },
+  {
+    path: "/carteiral/Técnicno",
+    title: "Técino de Curso",
+  },
+  {
+    path: "/carteiral/aprendizagem",
+    title: "Licença de Apredizagem",
+  },
+];
 
 export const dataTop = [
   {
