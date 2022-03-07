@@ -62,6 +62,7 @@ const Form = ({
                       <InputBox>
                         <Description>{input.name}</Description>
                         <Input
+                        required
                           type={input.type}
                           placeholder={input.placeHolder}
                         />
