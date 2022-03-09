@@ -1,5 +1,7 @@
-import _Nav, { List } from "./styled";
+import _Nav, { List, _NavMobile } from "./styled";
+import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Nav = ({
   data = [
@@ -14,8 +16,8 @@ const Nav = ({
         return (
           <List>
             {item.icon !== undefined ? (
-              <Link className="link" id={item.title}   to={item.path}>
-                {item.icon}okookok
+              <Link className="link" id={item.title} to={item.path}>
+                {item.icon}
                 {item.title}
               </Link>
             ) : (
@@ -28,3 +30,46 @@ const Nav = ({
   );
 };
 export default Nav;
+
+export const NavMobile = ({
+  data = [
+    {
+      title: "nome",
+    },
+  ],
+}) => {
+  const [click, setClick] = useState(false);
+
+  const HandleClick = () => {
+    setClick(!click);
+  };
+  
+
+  console.log(click);
+  return (
+    <_NavMobile click={click}>
+      <div id="menu-icon">
+        Menu <FaBars onClick={HandleClick} id="fa-bars"></FaBars>
+      </div>
+      {data.map((item, index) => {
+        return (
+          <>
+            <List>
+              {item.icon !== undefined ? (
+                <>
+                  {" "}
+                  {item.icon}
+                  <Link className="link" id={item.title} to={item.path}>
+                    {item.title}
+                  </Link>
+                </>
+              ) : (
+                <Link to={item.path}>{item.title}</Link>
+              )}
+            </List>
+          </>
+        );
+      })}
+    </_NavMobile>
+  );
+};

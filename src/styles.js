@@ -43,10 +43,12 @@ a{
     }
 }
 
+
 input{
     width:250px;
     height:36px;
 }
+
 `;
 
 export default GlobalStyle;
