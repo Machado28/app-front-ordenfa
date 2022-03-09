@@ -1,5 +1,6 @@
 import _Nav, { List, _NavMobile } from "./styled";
 import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -49,7 +50,7 @@ export const NavMobile = ({
   return (
     <_NavMobile click={click}>
       <div id="menu-icon">
-        Menu <FaBars onClick={HandleClick} id="fa-bars"></FaBars>
+        Menu { click ? <FaBars onClick={HandleClick} id="fa-bars"></FaBars>:<FaTimes onClick={HandleClick} id="Times"></FaTimes>}
       </div>
       {data.map((item, index) => {
         return (

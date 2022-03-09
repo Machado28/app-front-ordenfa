@@ -8,6 +8,11 @@ const Title = styled.h5`
   display: flex;
   align-items: center;
   padding-left: 20px;
-  font-size:${(props)=>props.size === undefined ??'14' }
+  font-size:${(props)=>props.size === undefined ??'14' };
+
+  #logo-express{
+    width:20px;
+    height:30px;
+  }
 `;
 export default Title;

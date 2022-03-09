@@ -9,17 +9,19 @@ const Form_ = styled.form`
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
-  margin: 1% 0 1% 0 ;
+  margin: 1% 0 1% 0;
+ 
+
+ 
 `;
 export default Form_;
 
 const Title_ = styled(Title)`
- background-color:#fff;
- font-size:12px ;
- font-weight:600;
- color:#0d630d;
- padding:12px;
- border-bottom:1px solid #eee;
-`
-export {Title_};
- 
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0d630d;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+`;
+export { Title_ };

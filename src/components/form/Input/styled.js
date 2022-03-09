@@ -15,6 +15,7 @@ font-size:11px;
 font-weight:bold;
 `;
 const _Input = styled.input`
+
   outline: none;
   padding: 10px 10px;
   border-radius: 3px;
@@ -26,6 +27,7 @@ const _Input = styled.input`
   &:-webkit-placeholder{
     color: red !important;
   }
+    
 `;
 export default _Input;
 

@@ -45,7 +45,8 @@ const dataInputs = [
         options: ["Solteiro(a)", "Casado(a)", "Viúvo(a)", "Divorciado(a)"],
       },
     ],
-  ],[
+  ],
+  [
     "Dados Pessoais",
     [
       {
@@ -112,62 +113,59 @@ const dataInputs = [
       },
     ],
   ],
-[
- 'Residência Actual',
- [
-     {
-         type:'text',
-         name:'Rua',
-         required:true,
-         placeHolder:'Em qual rua estás a morar ?',
-     },
-     {
-         type:'text',
-         name:'Prédio/Bloco',
-         required:true,
-         placeHolder:'Em que prédio/bloco estás a morar ?',
-     },
-     {
-         type:'text',
-         name:'Casa/Ato. nº',
-         required:true,
-         placeHolder:'Qual é o número da tua casa/Ato ?',
-     },
-     {
-         type:'text',
-         name:'Comuna/Distrito',
-         required:true,
-         placeHolder:'Em qual comuna/distrito estás a morar ?',
-     },
-     {
-         type:'text',
-         name:'Município',
-         required:true,
-         placeHolder:'Em qual município estás a morar ?',
-     },
-     {
-         type:'text',
-         name:'Província',
-         required:true,
-         placeHolder:'Em qual província estás a morar?',
-     },
-     {
-         type:'number',
-         name:'Telefone (1)',
-         required:true,
-          
-     },
-      
-     {
-         type:'email',
-         name:'Email',
-         required:true,
-          
-     }
-     
- ]
-],
-  
+  [
+    "Residência Actual",
+    [
+      {
+        type: "text",
+        name: "Rua",
+        required: true,
+        placeHolder: "Em qual rua estás a morar ?",
+      },
+      {
+        type: "text",
+        name: "Prédio/Bloco",
+        required: true,
+        placeHolder: "Em que prédio/bloco estás a morar ?",
+      },
+      {
+        type: "text",
+        name: "Casa/Ato. nº",
+        required: true,
+        placeHolder: "Qual é o número da tua casa/Ato ?",
+      },
+      {
+        type: "text",
+        name: "Comuna/Distrito",
+        required: true,
+        placeHolder: "Em qual comuna/distrito estás a morar ?",
+      },
+      {
+        type: "text",
+        name: "Município",
+        required: true,
+        placeHolder: "Em qual município estás a morar ?",
+      },
+      {
+        type: "text",
+        name: "Província",
+        required: true,
+        placeHolder: "Em qual província estás a morar?",
+      },
+      {
+        type: "number",
+        name: "Telefone (1)",
+        required: true,
+      },
+
+      {
+        type: "email",
+        name: "Email",
+        required: true,
+      },
+    ],
+  ],
+
   [
     "Dados De Ensino",
     [
@@ -210,7 +208,6 @@ const dataInputs = [
       },
     ],
   ],
-
   [
     "Dados De Ensino",
     [
@@ -264,6 +261,82 @@ const dataInputs = [
       },
     ],
   ],
+  [
+    "Emolumentos a pagar | TOTAL :",
+    [
+      {
+        type: "checkbox",
+        preco: 300,
+        id: "check-box",
+        required: true,
+        name: "Incrição",
+      },
+
+      {
+        type: "checkbox",
+        id: "check-box",
+        preco: 300,
+        required: true,
+        name: "Carteira",
+      },
+      {
+        type: "checkbox",
+        id: "check-box",
+        preco: 300,
+        required: true,
+        name: "Quotas",
+      },
+      {
+        type: "checkbox",
+        id: "check-box",
+        preco: 300,
+        required: true,
+        name: "Multa",
+      },
+      {
+        type: "checkbox",
+        id: "check-box",
+        preco: 300,
+        required: true,
+        name: "Código de Ética",
+        
+      },
+      {
+        type: "checkbox",
+        id: "check-box",
+        preco: 300,
+        required: true,
+        name: "Estatuto",
+       
+      },
+      {
+        type: "date",
+        preco: 300,
+        required: true,
+        name: "do periodo de",
+      },
+      {
+        type: "checkbox",
+        id: "check-box",
+        preco: 300,
+        required: true,
+        name: "Licença de Aprendizagem",
+       
+      },
+  
+    ],
+  ],
+  [
+    ["Pagamento de emolumentos via MULTICAIXA EXPRESS"],[
+      {
+        type: "number",
+        express:true,
+        required: true,
+        name: "Telefone express"
+       
+      },
+    ]
+  ]
 ];
 
 export default dataInputs;

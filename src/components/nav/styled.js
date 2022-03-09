@@ -62,7 +62,7 @@ const _NavMobile = styled.nav`
     width: 100%;
     padding-left: 14px;
     margin: 1px;
-    border-top: 1px solid #eee;
+ 
     background-color: #fff !important ;
     display: flex;
     flex-direction: row;
