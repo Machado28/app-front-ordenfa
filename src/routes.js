@@ -4,6 +4,7 @@ import { NavMobile } from "./components/nav";
 import Home from "./pages";
 import Inscricao from "./pages/inscricao";
 import data from './components/header/data';
+import MinhaCarteira from "./pages/minhaCarteira";
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route  path="/inscricao" component={Inscricao}></Route>
+         <Route  path="/minhaCarteira" component={MinhaCarteira}></Route>
       </Switch>
     </BrowserRouter>
   );

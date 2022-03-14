@@ -1,7 +1,7 @@
 import _Form, { GroupInput } from "./styled.js";
 import Input_ from "./Input/styled";
 import Title from "./../Title/styled.js";
-import dataInputs from "../../pages/inscricao/data.js";
+
 import React, { memo, useState } from "react";
 import SinzeDiv from "./../SinzeDiv/index";
 import { Title_ } from "./styled";
@@ -17,13 +17,13 @@ import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import express from "./assets/img/express.png";
 
 const Form = ({
-  inputList = dataInputs,
+  dataInputs,
   title,
   Inputs = [],
   limitRight = 4,
   limitLeft = 4,
 }) => {
-  const sizeInputList = inputList.length;
+  const sizedataInputs = dataInputs.length;
 
   const [nextForm, setNextForm] = useState(0);
   const [totalEmolumento, setTotalEmolumento] = useState(0);
@@ -40,16 +40,16 @@ const Form = ({
     console.log("props=>", event.target.value);
   };
   const HandleNextFOrm = (event) => {
-    nextForm >= sizeInputList - 1
+    nextForm >= sizedataInputs - 1
       ? setNextForm(nextForm)
       : setNextForm(nextForm + 1);
 
-    console.log("Size=>", sizeInputList);
+    console.log("Size=>", sizedataInputs);
   };
   const HandlePrevForm = (event) => {
     nextForm <= 0 ? setNextForm(nextForm) : setNextForm(nextForm - 1);
 
-    console.log("Size=>", sizeInputList);
+    console.log("Size=>", sizedataInputs);
   };
   console.log("Next=>", nextForm);
   const HandleSubmit = (e) => {
@@ -64,13 +64,13 @@ const Form = ({
         <Title_>
           
           {totalEmolumento !== 0
-            ? inputList[nextForm][0] + " :" + Number(totalEmolumento) + "kzs"
-            : inputList[nextForm][0] + " :"}
-            {inputList[nextForm][0][0]?.express===true ?(<>ola mundo</>):''}
+            ? dataInputs[nextForm][0] + " :" + Number(totalEmolumento) + "kzs"
+            : dataInputs[nextForm][0] + " :"}
+            {dataInputs[nextForm][0][0]?.express===true ?(<>ola mundo</>):''}
         </Title_>
         <ContainerGroupInputBox>
           <GroupInputBox id="group-input-box">
-            {inputList[nextForm][1]
+            {dataInputs[nextForm][1]
               .filter((item, index) => index < limitLeft)
               .map((input, key) => {
                 return (
@@ -118,7 +118,7 @@ const Form = ({
               })}
           </GroupInputBox>
           <GroupInputBox id="group-input-box">
-            {inputList[nextForm][1]
+            {dataInputs[nextForm][1]
               .filter((item, index) => index >= limitLeft)
               .map((input, key) => {
                 return (
@@ -184,7 +184,7 @@ const Form = ({
           value={"seguinte"}
         >
           {" "}
-          {nextForm + 1 === sizeInputList ? "Finalizar" : "Seguinte"}
+          {nextForm + 1 === sizedataInputs ? "Finalizar" : "Seguinte"}
           <FaAngleRight></FaAngleRight>
         </Button_>
       </SinzeDiv>
