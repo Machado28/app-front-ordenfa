@@ -5,7 +5,7 @@ const Container = styled.p`
 
  color:#fff;
  text-align:justify;
- width:50%;
+ width:70%;
  height:200px;
 
 `;export default Container;

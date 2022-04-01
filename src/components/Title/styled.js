@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const Container = styled.h1`
-  font-size: 60px;
+  font-size: 57px;
   margin-bottom:30px;
-  color: green;
-  text-align: center;
+  color: #fff;
+ 
 
 `;
 export default Container;

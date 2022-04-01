@@ -2,7 +2,8 @@ import Button_ from './styled'
 
 const Button= (props)=>{
  return(
-     <Button_ >seguinte</Button_> 
+     <Button_ >{props.text}</Button_> 
  )
 
 }
+export default Button;

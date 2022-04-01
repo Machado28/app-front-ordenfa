@@ -14,18 +14,31 @@ const Container = styled.div`
 export default Container;
 
 const Opacity = styled(Container)`
-  background: #02180266;
+  background: #021802a6;
+  
+
 `;
 export { Opacity };
 
 const CenterText = styled(Container)`
   background: transparent;
   box-shadow: 12px 9px 4px #1f1f1f1c;
-  margin-bottom: 16%;
-  margin-left:22%;
-  width: 60%;
-  height: 500px;
-  
+  width: 80%;
+  height: 150px;
   align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom:20%;
 `;
 export { CenterText };
+
+const CenterButton = styled(CenterText)`
+   flex-direction:row;
+  width: 83%;
+  height: 100px;
+  
+  margin-bottom:20%;
+  transform:translateY(-120px);
+  
+  
+`;
+export { CenterButton };
