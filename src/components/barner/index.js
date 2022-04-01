@@ -1,5 +1,5 @@
 import Paragrapth from "../Paragraphy";
-import Container, { Opacity } from "./styled";
+import Container, { CenterText, Opacity } from "./styled";
 import Title from './../Title/index';
 
 
@@ -10,8 +10,9 @@ const Barner =()=>{
     return(
        <Container>
            <Opacity>
-               <Title text={title1}></Title>
+              <CenterText> <Title text={title1}></Title>
                <Paragrapth text={paragraphy +paragraphy+paragraphy+paragraphy}></Paragrapth>
+               </CenterText>
            </Opacity>
        </Container>
     )
