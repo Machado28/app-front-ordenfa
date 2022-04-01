@@ -17,7 +17,7 @@ export default _Header;
 
 const Top = styled.div`
   width: 100%;
-  height: 30px;
+  height: 10px;
   background-color: green;
   display: flex;
   align-items: center;
@@ -51,8 +51,8 @@ const Top = styled.div`
 const NavMobile = styled(_Nav)``;
 
 const Logo = styled.img`
-  width: 110px;
-  height: 35px;
+  width: 210px;
+  height: 70px;
   @media screen and (max-width: 877px) {
     
   }

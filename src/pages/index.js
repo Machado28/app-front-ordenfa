@@ -1,7 +1,11 @@
+import Barner from "../components/barner";
+import Container from "./styled";
 const Home =()=>{
 
     return(
-        <div>HOme</div>
+         <Container>
+             <Barner></Barner>
+         </Container>
     )
 }
 export default Home;
