@@ -4,46 +4,48 @@ import _Nav from "./../nav/styled";
 
 const _Header = styled.header`
   width: 100%;
-  height: 100px;
+  height: 110px;
   background-color: #fff;
-  box-shadow: 1px 4px 16px #1f1f1f1f !important;
+
   display: flex;
-  z-index:1 ;
+  z-index: 1;
   position: fixed;
   flex-direction: column;
-  margin-top: 12px;
+  border-bottom: 3px solid #aaff99   !important;
+   
 `;
 export default _Header;
 
 const Top = styled.div`
   width: 100%;
-  height: 10px;
-  background-color: green;
+padding-top:12px;
+height:20px;
+  background-color: #bbff99;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   @media screen and (max-width: 877px) {
     height: 25px;
   }
 
   ul {
+    
     display: flex;
     align-items: center;
-    justify-content:flex-start;
-     width: 100%;
-     height:60px;
-     background-color:green;
+    justify-content: flex-start;
+    width: 100%;
+ 
+    background-color: green;
     @media screen and (max-width: 877px) {
-     justify-content: space-evenly;
-     width:100%;
+      justify-content: space-evenly;
+      width: 100%;
     }
 
     li {
-      margin: 0 5vh 0;
+      margin: 6px 5vh 0;
       color: #fff;
       font-size: 10px;
-      
     }
   }
 `;
@@ -51,23 +53,23 @@ const Top = styled.div`
 const NavMobile = styled(_Nav)``;
 
 const Logo = styled.img`
-  width: 210px;
-  height: 70px;
+  width: 270px;
+  height: 67px;
   @media screen and (max-width: 877px) {
-    
   }
 `;
 
 const Container = styled.div`
-  display:flex;
+  display: flex;
   align-items: center !important;
-  justify-content:space-around;
+  justify-content: space-around;
   background-color: #fff;
-  width:100%;
-  height: 200px;
+  width: 100%;
+  height:90px;
+  
   @media screen and (max-width: 877px) {
-  justify-content:space-between ;
-  padding:6px;
+    justify-content: space-between;
+    padding: 6px;
   }
 `;
 

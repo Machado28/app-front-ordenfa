@@ -6,6 +6,7 @@ const _Nav = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
+  
   @media screen and (max-width: 877px) {
     display: none;
   }
@@ -88,11 +89,14 @@ const List = styled.li`
   .link {
     color: green;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     width:120px;
     border-bottom: 2px solid transparent;
     &:hover {
-      border-bottom: 2px solid green;
+     background-color:green;
+     padding:3px;
+     border-radius:2px;
+     color:#fff;
     }
   }
 `;
