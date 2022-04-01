@@ -18,7 +18,7 @@ const Nav = ({
           <List>
             {item.icon !== undefined ? (
               <Link className="link" id={item.title} to={item.path}>
-                {item.icon}
+                
                 {item.title}
               </Link>
             ) : (

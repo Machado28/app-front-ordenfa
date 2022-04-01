@@ -21,7 +21,7 @@ const Header = () => {
         <Nav id="nav-computer" data={data}></Nav>
 
         <Link id="link-inscricao" to="/inscricao">
-          Inscricao
+         Cadastre-se Aqui
         </Link>
       </Container>
     </_Header>

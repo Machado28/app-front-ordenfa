@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const _Nav = styled.nav`
-  width: 40%;
+  width: 48%;
   height: 60px;
   display: flex;
   flex-direction: row;
@@ -78,8 +78,7 @@ const _NavMobile = styled.nav`
 export default _Nav;
 
 const List = styled.li`
-  width: 30%;
-  padding: 12px;
+
   height: 40px;
   background-color: green;
   color: #1f1f1f;
@@ -89,7 +88,8 @@ const List = styled.li`
   .link {
     color: green;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    width:120px;
     border-bottom: 2px solid transparent;
     &:hover {
       border-bottom: 2px solid green;

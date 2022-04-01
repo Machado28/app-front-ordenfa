@@ -15,10 +15,7 @@ const data = [
     path: "/sobre",
     icon: <FaHome></FaHome>
   },
-  {
-    title: "FAQ",
-    path: "/faq",
-  },
+  
   {
     title: "Minha carteira",
     path: "/minhaCarteira",
