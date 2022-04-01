@@ -3,7 +3,7 @@ import urlBackground from "./assets/img/Cooperativa-de-Servicos-Medicos-o-que-e-
 
 const Container = styled.div`
   width: 100%;
-  height: 1000px;
+  height: 600px;
   background-image: url(${urlBackground});
   background-size: cover;
   display: flex;
@@ -27,7 +27,7 @@ const CenterText = styled(Container)`
   height: 150px;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom:20%;
+  margin-bottom:8%;
 `;
 export { CenterText };
 
@@ -35,9 +35,8 @@ const CenterButton = styled(CenterText)`
    flex-direction:row;
   width: 83%;
   height: 100px;
-  
-  margin-bottom:20%;
-  transform:translateY(-120px);
+
+  transform:translateY(25px);
   
   
 `;

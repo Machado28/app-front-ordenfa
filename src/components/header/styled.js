@@ -4,8 +4,8 @@ import _Nav from "./../nav/styled";
 
 const _Header = styled.header`
   width: 100%;
-  height: 110px;
-  background-color: #fff;
+  height: 90px;
+  background-color: #000;
 
   display: flex;
   z-index: 1;
@@ -53,8 +53,8 @@ height:20px;
 const NavMobile = styled(_Nav)``;
 
 const Logo = styled.img`
-  width: 270px;
-  height: 67px;
+  width: 230px;
+  height: 47px;
   @media screen and (max-width: 877px) {
   }
 `;
@@ -63,9 +63,9 @@ const Container = styled.div`
   display: flex;
   align-items: center !important;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: #222;
   width: 100%;
-  height:90px;
+  height:80px;
   
   @media screen and (max-width: 877px) {
     justify-content: space-between;
