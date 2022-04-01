@@ -7,10 +7,14 @@ const Container= styled.div`
  height: 1000px;
  background-image:url(${urlBackground});
  background-size:cover;
+ display:flex;
+ align-items:center;
+ flex-direction:column;
+ justify-content:center;
 `;
 export default Container;
 
 const Opacity= styled(Container)`
- background:#0ba80b43;
+ background:#02180266;
 
 `;export {Opacity};

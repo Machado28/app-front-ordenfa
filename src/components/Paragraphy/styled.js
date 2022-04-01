@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
 const Container = styled.p`
- font-size:14px;
+ font-size:20px;
 
- color:#1f1f1f;
- text-align:center;
+ color:#fff;
+ text-align:justify;
+ width:50%;
+ height:200px;
 
 `;export default Container;
