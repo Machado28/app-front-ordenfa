@@ -3,13 +3,13 @@ import Title from "../Title/styled";
 
 const Form_ = styled.form`
   width: 70%;
-  height: 600px;
+  height: 300px;
   display: flex;
-  background-color: #fff;
+  background-color: #000;
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
-  margin: 1% 0 1% 0;
+ 
  
 
  

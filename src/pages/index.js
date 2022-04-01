@@ -1,10 +1,14 @@
 import Barner from "../components/barner";
-import Container from "./styled";
+import Form from '../components/form'
+import Container,{FormContainer} from "./styled";
 const Home =()=>{
 
     return(
          <Container>
              <Barner></Barner>
+            <FormContainer>
+                 <Form></Form>
+            </FormContainer>
          </Container>
     )
 }

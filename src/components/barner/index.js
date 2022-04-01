@@ -15,8 +15,8 @@ const Barner =()=>{
                <Paragrapth text={paragraphy +paragraphy+paragraphy+paragraphy}></Paragrapth>
                </CenterText>
                <CenterButton>
-                   <Button text ={'Ver mais...'}></Button>
-                    <Button text ={'Solicitar carteira'}></Button>
+                   <Button className={'button  first-button'} text ={'Ver mais...'}></Button>
+                    <Button className={'button  second-button'} text ={'Solicitar carteira'}></Button>
                </CenterButton>
            </Opacity>
        </Container>

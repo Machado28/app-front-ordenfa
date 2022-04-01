@@ -15,8 +15,6 @@ export default Container;
 
 const Opacity = styled(Container)`
   background: #021802a6;
-  
-
 `;
 export { Opacity };
 
@@ -27,17 +25,30 @@ const CenterText = styled(Container)`
   height: 130px;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom:8%;
+  margin-bottom: 8%;
 `;
 export { CenterText };
 
 const CenterButton = styled(CenterText)`
-   flex-direction:row;
+  flex-direction: row;
   width: 83%;
   height: 100px;
+  margin-top: 30px;
+  transform: translateY(25px);
 
-  transform:translateY(25px);
-  
-  
+  button.button {
+    height: 50px !important;
+    width:150px;
+    transition:0.5s ease-out;
+  }
+  button.first-button {
+    background-color: transparent;
+  }
+
+  button.button:hover {
+    background-color: #fff;
+    color: green;
+    
+  }
 `;
 export { CenterButton };
