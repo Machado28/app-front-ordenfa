@@ -87,7 +87,7 @@ const List = styled.li`
 
   a,
   .link {
-    color: green;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     width:120px;

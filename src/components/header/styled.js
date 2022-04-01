@@ -18,8 +18,8 @@ export default _Header;
 
 const Top = styled.div`
   width: 100%;
-padding-top:12px;
-height:20px;
+  padding-top:12px;
+  height:20px;
   background-color: #bbff99;
   display: flex;
   align-items: center;
@@ -53,8 +53,8 @@ height:20px;
 const NavMobile = styled(_Nav)``;
 
 const Logo = styled.img`
-  width: 230px;
-  height: 47px;
+  width: 200px;
+  height: 57px;
   @media screen and (max-width: 877px) {
   }
 `;

@@ -24,7 +24,7 @@ const CenterText = styled(Container)`
   background: transparent;
   box-shadow: 12px 9px 4px #1f1f1f1c;
   width: 80%;
-  height: 150px;
+  height: 130px;
   align-items: flex-start;
   justify-content: flex-start;
   margin-bottom:8%;

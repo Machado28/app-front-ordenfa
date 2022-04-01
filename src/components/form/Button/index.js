@@ -2,7 +2,7 @@ import Button_ from './styled'
 
 const Button= (props)=>{
  return(
-     <Button_ >{props.text}</Button_> 
+     <Button_ className={props.className} >{props.text}</Button_> 
  )
 
 }
