@@ -1,12 +1,12 @@
 const dataInputs = [
   [
-    "Dados Pessoais",
+    "Preenche cuidadosamente o formúlario",
     [
       {
         type: "text",
         required: true,
-        name: "Nome Completo",
-        placeHolder: "Digite o nome completo",
+        name: "Código de Incrição",
+        placeHolder: "Qual é o teu código de inscrição",
       },
       {
         type: "text",

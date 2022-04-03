@@ -1,7 +1,8 @@
 import { BrowserRouter, Route,  Switch } from "react-router-dom";
 import Header from "./components/header";
-import Home from "./pages";
-import Inscricao from "./pages/inscricao";
+import Home from './pages/index'
+ 
+ 
 
 const Routes = () => {
   return (
@@ -9,7 +10,6 @@ const Routes = () => {
       <Header/>
       <Switch>
         <Route exact path="/" component={Home}></Route>
-        <Route  path="/inscricao" component={Inscricao}></Route>
       </Switch>
     </BrowserRouter>
   );

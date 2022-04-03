@@ -37,16 +37,18 @@ a{
     font-size:13px;
     font-weight:bold;
      border:1px solid #fff;
-     box-shadow:1px 2px 8px green;
+     
     &:active{
         border:1px solid #1e5945;
     }
 }
 
+
 input{
     width:250px;
     height:36px;
 }
+
 `;
 
 export default GlobalStyle;

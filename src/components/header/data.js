@@ -1,19 +1,28 @@
+import { FaHome } from 'react-icons/fa';
 const data = [
   {
     title: "Início",
     path: "/",
+    icon: <FaHome></FaHome>
   },
   {
     title: "Documentos",
     path: "/documentos",
+    icon: <FaHome></FaHome>
   },
   {
     title: "Sobre",
     path: "/sobre",
+    icon: <FaHome></FaHome>
+  },
+  
+  {
+    title: "Minha carteira",
+    path: "/minhaCarteira",
   },
   {
-    title: "FAQ",
-    path: "/faq",
+    title: "inscrição",
+    path: "/inscricao",
   },
 ];
 export default data;

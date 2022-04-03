@@ -1,6 +1,6 @@
 import Container from "./styled";
 
-const Title = (props) => {
+const Paragrapth = (props) => {
   return <Container>{props.text}</Container>;
 };
-export default Title;
+export default Paragrapth;
