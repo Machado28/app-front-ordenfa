@@ -7988,6 +7988,11 @@ react-scripts@^5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
+react-strap@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-strap/-/react-strap-0.0.1.tgz#08f22c5e2a0ae7f475cd5814b89fc0c05a67215e"
+  integrity sha1-CPIsXioK5/R1zVgUuJ/AwFpnIV4=
+
 react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"

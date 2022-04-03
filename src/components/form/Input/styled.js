@@ -1,34 +1,30 @@
 import styled from "styled-components";
 
-const InputBox = styled.div`
-  width: 100%;
-  height: 100px;
-  display: flex;
-  background: #000;;
-  flex-direction: column;
-  margin:4px;
-   
-`;
-const Description=styled.span`
-color:#1f1f1fc2 ;
-font-size:11px;
-font-weight:bold;
-`;
-const _Input = styled.input`
+const Label = styled.label`
+  color: #1f1f1fc2;
+  font-size: 11px;
+  font-weight: bold;
+  width: 32%;
+  height: 80px;
+  margin-right:10px;
 
-  outline: none;
-  padding: 10px 10px;
-  border-radius: 3px;
-  width: 100%;
-  height: 45px;
-  border: 1px solid #ddd;
-  margin-top: 6px;
-
-  &:-webkit-placeholder{
-    color: red !important;
+  input {
+    outline: none;
+    padding: 10px 10px;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid #bbb;
+    margin-top: 6px;
+    transition: 0.3s ease;
+font-size: 10px;
+    &:-webkit-placeholder {
+      color: red !important;
+    }
+    &:focus-visible {
+      
+      border: 1px solid green;
+    }
   }
-    
 `;
-export default _Input;
-
-export { InputBox,Description };
+export default Label;

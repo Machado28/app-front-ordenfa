@@ -7,6 +7,13 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 
 };
+#root2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 #group-input-box{
     display:flex;
     flex-direction:column;

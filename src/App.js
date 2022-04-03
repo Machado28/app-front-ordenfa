@@ -4,10 +4,10 @@ import GlobalStyle from './styles';
 
 function App() {
   return (
-    <>
+    <div id="root2">
      <Routes/>
      <GlobalStyle/>
-    </>
+    </div>
   );
 }
 
