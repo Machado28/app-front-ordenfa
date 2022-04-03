@@ -11,10 +11,10 @@ export default Container;
 const FormContainer = styled.div`
   width: 100%;
   height: 200px;
-  background: green;
+  
   display:flex;
   align-items:center;
   justify-content:space-around;
-
+ margin-top:80px;
 `;
 export { FormContainer };
