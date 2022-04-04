@@ -13,7 +13,8 @@ const Input = ({
   onChange,
 }) => {
   return (
-    <Label for={title}>
+    <Label  flexDirection=''
+           displayFlex="0" for={title}>
       
       {required === true ? (
        <> {"* "+ title}
@@ -26,6 +27,7 @@ const Input = ({
           name={title}
           placeholder={placeholder}
            required
+          
         />
        </>
       ) : (

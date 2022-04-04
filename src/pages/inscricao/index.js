@@ -1,18 +1,19 @@
  
-import Container from "./styled";
-import { _Modal } from "./../minhaCarteira/styled";
-import dataInputs from "./data";
-import Form from "./../../components/form";
-import data from './../../components/header/data';
- 
+import Container,{FormContainer} from "./styled";
+import dataGroup, { Slider } from './data'
+import Barner from "../../components/barner";
+import Form from "../../components/form";
+const Inscricao =()=>{
 
-const Inscricao = () => {
-  return (
-    <Container>
-      <_Modal>
-      <Form dataInputs={dataInputs} title={'Formuário de Inscrição '} />
-    </_Modal>
-    </Container>
-  );
-};
+    return(
+         <Container>
+             <Barner Slider={Slider}></Barner>
+            <FormContainer>
+              
+                 <Form title={'Formulário de Inscrição'} dataGroup={dataGroup}></Form>
+            </FormContainer>
+           
+         </Container>
+    )
+}
 export default Inscricao;

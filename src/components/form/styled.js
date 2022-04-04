@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Title from "../Title/styled";
 
 const Form_ = styled.form`
-  width: 100%;
+  width: 90%;
   height: auto;
   display: flex;
   background-color: #fff;
@@ -15,7 +15,7 @@ const Form_ = styled.form`
   padding:18px;
   fieldset{
     width:100%;
-     margin:0 auto 12px auto;
+     margin:10px auto 12px auto;
     
 
   }
@@ -34,8 +34,8 @@ const Form_ = styled.form`
     font-size: 16px;
     color:green;
      font-weight:0;
-     padding-top:14px;
-    border-top:2px solid #044b04a4;;
+     padding-top:24px;
+    border-top:1px solid #ddddddec;
   }
 `;
 export default Form_;

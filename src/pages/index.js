@@ -2,13 +2,15 @@ import Barner from "../components/barner";
 import Footer from "../components/footer";
 import Form from '../components/form'
 import Container,{FormContainer} from "./styled";
+
+import dataGroup from "./data";
 const Home =()=>{
 
     return(
          <Container>
              <Barner></Barner>
             <FormContainer>
-                 <Form></Form>
+                 <Form dataGroup={dataGroup}></Form>
             </FormContainer>
             <Footer></Footer>
          </Container>
