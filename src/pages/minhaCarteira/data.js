@@ -1,11 +1,26 @@
+const Ano = (start=1888,end=2022)=>{
+  let option=[]
+  for(let init=start; init<=end;init++)
+  return [
+          { title:init},
+          
+        ]
+}
 const dataGroup = [
+   
   {
     title: "Dados Pessoais",
     dataInput: [
       {
         required: true,
-        title: "Código de Incrição",
-        placeholder: "Qual é o teu código de inscrição",
+        title: "Código de inscrição/BI/Passaporte",
+        placeholder: "Qual é o teu código de inscrição/BI/Passaporte",
+      },
+      {
+        type: "text",
+        required: true,
+        title: "Nome Completo ",
+        placeholder: "Digite o teu nome completo",
       },
       {
         type: "text",
@@ -82,6 +97,89 @@ const dataGroup = [
         required: true,
         title: "País",
         placeholder: "Em que país você nasceu ?",
+      },
+      {
+        type: "file",
+        required: true,
+        title: "Foto tipo passe (obs: fundo branco)",
+         
+      },
+      {
+        type: "number",
+        required: true,
+        title: "Código de Comprovativo de quotas",
+         placeholder: "Qual é o código do comprovativo de quotas",
+     
+      },
+      ]
+  },
+  {
+    title: "Dados De Formação",
+    dataInput: [
+      {
+        type: "select",
+       title: "Área de Formação/Curso",
+        option: [
+          { title: "Técnico de Enfermagem" },
+          { title: "Técnico de Análises Clínica" },
+          { title: "Técnico de Nutricionista" },
+        ],
+      },
+       
+      {
+        required: true,
+        title: "Certificado autencicado  (formato : pdf,png)",
+        placeholder: "Qual é o teu código de inscrição/BI/Passaporte",
+      },
+      
+      {
+        type: "date",
+        required: true,
+        title: "Ano de Início",
+         
+      },
+      {
+        type: "date",
+        required: true,
+        title: "data de Fim",
+         
+      },
+      {
+        type: "text",
+        required: true,
+        title: "Comuna /Distrito Urbano",
+        placeholder: "Em que distrito urbano ou rua se encontra a escola ?",
+      },
+      {
+        type: "text",
+        required: true,
+        title: "Município ",
+        placeholder: "Em que município você nasceu ?",
+      },
+      {
+        type: "text",
+        required: true,
+        title: "Provícia/Estado",
+        placeholder: "Em que província você nasceu ?",
+      },
+      {
+        type: "text",
+        required: true,
+        title: "País",
+        placeholder: "Em que país você nasceu ?",
+      },
+      {
+        type: "file",
+        required: true,
+        title: "Foto tipo passe (obs: fundo branco)",
+         
+      },
+      {
+        type: "number",
+        required: true,
+        title: "Código de Comprovativo de quotas",
+         placeholder: "Qual é o código do comprovativo de quotas",
+     
       },
       ]
   }
