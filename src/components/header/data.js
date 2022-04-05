@@ -1,24 +1,35 @@
-import { FaHome } from 'react-icons/fa';
+import { FaHome } from "react-icons/fa";
 const data = [
   {
     title: "Início",
     path: "/",
-    icon: <FaHome></FaHome>
-  },
-  {
-    title: "Documentos",
-    path: "/documentos",
-    icon: <FaHome></FaHome>
-  },
-  {
-    title: "Sobre",
-    path: "/sobre",
-    icon: <FaHome></FaHome>
+    icon: <FaHome></FaHome>,
+    
   },
   
   {
+    title: "Sobre",
+    path: "/sobre",
+    icon: <FaHome></FaHome>,
+  },
+
+  {
     title: "Minha carteira",
-    path: "/minhaCarteira",
+    option: [
+      {
+        title: "carteira profissional- técnico",
+        path: "/minhaCarteiraTecnico",
+      
+      },
+      {
+        title: "2ª via  carteira profissional - técnico",
+        path: "/2minhaCarteiraTecnico",
+      },
+      {
+        title: " 2ª via- Licença de apredizagem",
+        path: "/2minhaLicençaTecnico",
+      },
+    ],
   },
   {
     title: "inscrição",

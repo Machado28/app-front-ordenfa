@@ -94,7 +94,7 @@ const List = styled.li`
     border-bottom: 2px solid transparent;
     &:hover {
      background-color:green;
-     padding:3px;
+     padding:2px;
      border-radius:2px;
      color:#fff;
     }
