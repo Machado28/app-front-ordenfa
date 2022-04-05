@@ -1,19 +1,18 @@
- 
-import Container,{FormContainer} from "./styled";
-import dataGroup, { Slider } from './data'
+import Container from "./styled";
+import dataGroup, { Slider } from "./data";
 import Barner from "../../components/barner";
 import Form from "../../components/form";
-const Inscricao =()=>{
-
-    return(
-         <Container>
-             <Barner Slider={Slider}></Barner>
-            <FormContainer>
-              
-                 <Form title={'Formulário de Inscrição'} dataGroup={dataGroup}></Form>
-            </FormContainer>
-           
-         </Container>
-    )
-}
+import Footer from "../../components/footer";
+import { FormContainer } from "../styled";
+const Inscricao = () => {
+  return (
+    <Container>
+      <Barner Slider={Slider}></Barner>
+      <FormContainer>
+        <Form dataGroup={dataGroup}></Form>
+      </FormContainer>
+      <Footer></Footer>
+    </Container>
+  );
+};
 export default Inscricao;

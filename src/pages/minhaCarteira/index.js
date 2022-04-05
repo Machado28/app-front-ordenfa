@@ -1,34 +1,18 @@
-import Container, { _Modal, _ModalChildren } from "./styled";
-import dataInputs from "./data";
+ 
+import dataGroup from "./data";
 import Form from "./../../components/form";
+import Barner from "../../components/barner";
+import Footer from "../../components/footer";
+import Container,{ FormContainer } from "../styled";
 
-const InputcodigoInscricao=[
-  [
-    'Você está inscrito?',
-    [{
-      name:'Código da inscrição:',
-      pleaceHolder:'Qual é o seu código de Inscrição?',
-      type:'text'
-    }],
-
-  ]
-]
-const MinhaCarteira = ({click=Form}) => {
+const MinhaCarteira = () => {
   return (
     <Container>
-      <_Modal>
-         
-       fdfdfdfdfd
-          <Form
-        dataInputs={InputcodigoInscricao}
-        title={"Formuário de Solicitação de Carteira "}
-      />
-       
-      </_Modal>
-      <Form
-        dataInputs={dataInputs}
-        title={"Formuário de Solicitação de Carteira "}
-      />
+      <Barner></Barner>
+      <FormContainer>
+        <Form dataGroup={dataGroup}></Form>
+      </FormContainer>
+      <Footer></Footer>
     </Container>
   );
 };

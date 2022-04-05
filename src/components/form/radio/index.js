@@ -1,6 +1,4 @@
-import Label from "../Input/styled.js";
-
-import Radio_ from "./styled.js";
+ import Radio_,{Label_} from "./styled.js";
 import Title from './../../Title/index';
 
 const Radio = ({
@@ -20,11 +18,13 @@ const Radio = ({
 }) => {
   console.log("dados=>");
   return (
-    <Label  flexDirection='row'
-           displayFlex="flex" id="label" for={title}>
-     <h6 id="form-title" className="h6">{title}:</h6>
+    <Label_>
+       <h6 id="form-title" className="h6">{title}:</h6>
+    <Label_  flexDirection='row'
+           displayFlex="flex" id="label-1" for={title}>
+    
       {option.map((item, index) => (
-        <Label for={item.title}>
+        <Label_ id="label-2"for={item.title}>
           {item.title}
         <Radio_
         key={index}
@@ -36,9 +36,10 @@ const Radio = ({
           onChange={()=>onChange}
         ></Radio_>
 
-        </Label>
+        </Label_>
       ))}
-    </Label>
+    </Label_>
+    </Label_>
   );
 };
 export default Radio;

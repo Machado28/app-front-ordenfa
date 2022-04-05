@@ -1,20 +1,20 @@
-import { BrowserRouter, Route,  Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Home from './pages/index'
+import Home from "./pages/index";
 import Inscricao from "./pages/inscricao";
- 
- 
+import MinhaCarteira from "./pages/minhaCarteira";
 
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Header/>
+      <Header />
       <Switch>
         <Route exact path="/" component={Home}></Route>
-         <Route exact path="/inscricao" component={Inscricao}></Route>
+        <Route  path="/inscricao" component={Inscricao}></Route>
+        <Route  path="/minhaCarteira" component={MinhaCarteira}></Route>
       </Switch>
-      <Footer>kkk</Footer>
+    
     </BrowserRouter>
   );
 };

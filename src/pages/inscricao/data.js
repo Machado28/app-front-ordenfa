@@ -2,6 +2,7 @@ import imgSlider1 from './assets/img/slide-1.jpg'
 import imgSlider2 from './assets/img/slide-2.jpg'
 import imgSlider3 from './assets/img/slide-4'
 import imgSlider4 from './assets/img/slide-5.jpg'
+
 const dataGroup = [
   {
     title: "Dados pessoais",
