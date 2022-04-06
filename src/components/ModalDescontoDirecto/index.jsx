@@ -39,7 +39,7 @@ Banco BIC, com o nº 112910572/10, IBAN AO06.0051.0000.1291.0572.1016.5`,
           <strong>{naturalidade}</strong>, Município de,
           <strong>{municipio}</strong> Província de <strong>{provincia}</strong>
           , Nascido aos <strong>{diaUser}</strong> de <strong>{mesUser}</strong>{" "}
-          <strong> {anoUser}></strong>, com o nº de Agente
+          <strong> {anoUser}</strong>, com o nº de Agente
           <strong>{codAgente}</strong>com a Categoria Profissional de{" "}
           <strong>{curso}</strong>
         </p>
