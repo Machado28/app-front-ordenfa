@@ -4,7 +4,7 @@ import Form from "./../../components/form";
 import Barner from "../../components/barner";
 import Footer from "../../components/footer";
 import Container,{ FormContainer } from "../styled";
-import { Slider } from "../inscricao/data";
+import { Slider } from "./data";
 
 const MinhaCarteira = () => {
   return (

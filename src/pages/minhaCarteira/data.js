@@ -1,4 +1,24 @@
-const Ano = (start=1888,end=2022)=>{
+import imgSlider1 from './assets/img/slide-1.jpg'
+import imgSlider2 from './assets/img/slide-2.jpg'
+import imgSlider3 from './assets/img/slide-4'
+import imgSlider4 from './assets/img/slide-5.jpg'
+
+
+export const Slider = [
+  {
+    title: "Solicitação De  Carteira Profissional Para técnico",
+    text: " Satisfazer as necessidades dos nossos profissionais, é a nossa responsabilidade. Odenfa somos uma família.Seja ordenfa",
+    button1: "saber mais...",
+    button2:'Sobre',
+     img:[
+            {path:imgSlider1}
+            ,
+            {path:imgSlider2},
+            {path:imgSlider3},
+            {path:imgSlider4}
+        ]
+  },
+];const Ano = (start=1888,end=2022)=>{
   let option=[]
   for(let init=start; init<=end;init++)
   return [

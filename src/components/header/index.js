@@ -4,8 +4,10 @@ import Nav, { NavMobile } from "./../nav/index";
 import { Link } from "react-router-dom";
 import data, { dataTop } from "./data";
 import {FaHome} from 'react-icons/fa'
+import { useState } from 'react';
 
 const Header = () => {
+
   return (
     <_Header>
       <Top>
