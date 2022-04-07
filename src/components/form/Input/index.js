@@ -7,10 +7,11 @@ const Input = ({
   type = "text",
   title,
   value,
+  name,
   required = true,
   placeholder,
   onClick,
-  onChange,
+  onChange
 }) => {
   return (
     <Label  flexDirection=''
@@ -19,12 +20,14 @@ const Input = ({
       {required === true ? (
        <> {"* "+ title}
         <input
-          value={value}
+        readOnly={false}
+           value={value}
           onClick={onClick}
-          onChange={onChange}
+          onChange={onChange()}
           type={type}
           id={title}
-          name={title}
+          
+          name={name}
           placeholder={placeholder}
            required
           
@@ -36,10 +39,11 @@ const Input = ({
         <input
           value={value}
           onClick={onClick}
-          onChange={onChange}
+          onChange={onChange()}
           type={type}
           id={title}
           name={title}
+          onFocus={this.value}
           placeholder={placeholder}
          
         />

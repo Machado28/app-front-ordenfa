@@ -3,7 +3,11 @@ import Footer from "../components/footer";
 import Form from "../components/form";
 import Container, { FormContainer } from "./styled";
 import dataGroup from "./data";
+import { useState } from 'react';
+
 const Home = () => {
+
+
   return (
     <Container>
       <Barner></Barner>

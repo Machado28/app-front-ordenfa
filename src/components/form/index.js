@@ -6,6 +6,9 @@ import Select from "./Select/index.js";
 import Radio from "./radio/index.js";
 
 const Form = ({
+  onChange,
+  onClick,
+  onSubmit,
   title = "Cadastramento",
   dataGroup = [
     {
@@ -19,8 +22,9 @@ const Form = ({
     },
   ],
 }) => {
+   const renderChange= ()=>onChange()
   return (
-    <_Form>
+    <_Form onSubmit={onSubmit}>
       <legend id="form-title" className="legend">
         {title}
       </legend>
@@ -55,6 +59,9 @@ const Form = ({
                           title={item.title}
                           placeholder={item.placeholder}
                           type={item.type}
+                          onChange={()=>onChange}
+                          name={item.name}
+                          value={item.value}
                         />
                       )}
                     </>
