@@ -4,7 +4,10 @@ import Barner from "../../components/barner";
 import Form from "../../components/form";
 import Footer from "../../components/footer";
 import { FormContainer } from "../styled";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import api from "./../services/api/index";
+
+ 
 
 const Inscricao = () => {
   const [nomeCompleto, setNomeCompleto] = useState([]);
@@ -29,7 +32,9 @@ const Inscricao = () => {
   const [residenciaCasa, setResidenciaCasa] = useState("");
   const [residenciaBairro, setResidenciaBairro] = useState("");
   const [residenciaComuna, setResidenciaComuna] = useState("");
-  const [residenciaMunicipio, setResidenciaMunicipio] = useState("");
+  const [residenciaMunicipio, setResidenciaMunicipio] = useState([
+    { title: "Estalagem" },
+  ]);
   const [residenciaProvincia, setResidenciaProvincia] = useState("");
   const [telefone, setTelefone] = useState("");
   const [email, setEmail] = useState("");
@@ -60,7 +65,14 @@ const Inscricao = () => {
   const [residenciaPaisEscolaMedio, setResidenciaPaisEscolaMedio] =
     useState("");
   const [anoEscolaMedio, setAnoEscolaMedio] = useState("");
-
+  useEffect(() => {
+    async function GetMunicipio() {
+      const response = await api.get("/municipio");
+      setnMunicipio(response.data);
+     console.log(response.data)
+    }
+    GetMunicipio()
+  }, [nMunicipio]);
   const HandleOnChange = (e) => {
     console.log(e.target.value);
 
@@ -197,39 +209,43 @@ const Inscricao = () => {
           value: nComuna,
           placeholder: "digite Comuna/Distrito onde nasceu",
         },
-        {
-          title: "Município de :",
-          name: "nMunicipio",
-          value: nMunicipio,
-          placeholder: "digite o municipio onde nasceu",
-        },
-        {
-          title: "Provincia de :",
-          name: "nProvincia",
-          value: nProvincia,
-          placeholder: "digite a  província onde nasceu",
-        },
-        {
-          title: "Sexo :",
-          name: "sexo",
-          value: sexo,
-          type: "radio",
-          option: [{ title: "masculino" }, { title: "femenino" }],
-        },
-        {
-          title: "nacionalidade :",
-          name: "naciolidade",
-          value: nacionalidade,
-          placeholder: "digite a tua naciolidade",
-        },
+        // {
+        //   title: "Município de :",
+        //   name: "nMunicipio",
+        //   value: nMunicipio,
+        //   option: nMunicipio,
+        //   type: "select",
+        //   placeholder: "digite o municipio onde nasceu",
+        // },
+        // {
+        //   title: "Provincia de :",
+        //   name: "nProvincia",
+        //   value: nProvincia,
+        //   option: nProvincia,
+        //   type: "select",
+        // },
+        // {
+        //   title: "Sexo :",
+        //   name: "sexo",
+        //   value: sexo,
+        //   type: "radio",
+        //   option: [{ title: "masculino" }, { title: "femenino" }],
+        // },
+        // {
+        //   title: "nacionalidade :",
+        //   name: "naciolidade",
+        //   value: nacionalidade,
+        //   option: nacionalidade,
+        //   type: "select",
+        // },
 
-        {
-          title: "Documento de Identificação :",
-          name: "documento",
-          value: documento,
-          type: "select",
-          option: [{ title: "Bilhete de identidade" }, { title: "Passaporte" }],
-        },
+        // {
+        //   title: "Documento de Identificação :",
+        //   name: "documento",
+        //   value: documento,
+        //   type: "select",
+        //   option: documento,
+        // },
 
         {
           title: "Número do documento de Identificação :",
@@ -257,17 +273,13 @@ const Inscricao = () => {
           value: dataExpiracaoBi,
           type: "date",
         },
-        {
-          title: "Estado Civil:",
-          name: "estadoCivil",
-          value: estadoCivil,
-          type: "select",
-          option: [
-            { title: "Estado Civil" },
-            { title: "casado(a)" },
-            { title: "Divorciado(a)" },
-          ],
-        },
+        // {
+        //   title: "Estado Civil:",
+        //   name: "estadoCivil",
+        //   value: estadoCivil,
+        //   type: "select",
+        //   // option: estadoCivil,
+        // },
       ],
     },
     {
@@ -308,20 +320,22 @@ const Inscricao = () => {
           type: "text",
           placeholder: "Moras em que Comuna/Distrito Urbano? ",
         },
-        {
-          title: "Municipio:",
-          name: "residenciaMunicipio",
-          value: residenciaMunicipio,
-          type: "text",
-          placeholder: "Moras em que Municipio? ",
-        },
-        {
-          title: "Provincia:",
-          name: "residenciaProvincia",
-          value: residenciaProvincia,
-          type: "text",
-          placeholder: "Moras em que Provincia? ",
-        },
+        // {
+        //   title: "Municipio:",
+        //   name: "residenciaMunicipio",
+        //   value: residenciaMunicipio,
+        //   type: "select",
+        //   placeholder: "Moras em que Municipio? ",
+        //   option: residenciaMunicipio,
+        // },
+        // {
+        //   title: "Provincia:",
+        //   name: "residenciaProvincia",
+        //   value: residenciaProvincia,
+        //   type: "select",
+        //   option: residenciaProvincia,
+        //   placeholder: "Moras em que Provincia? ",
+        // },
       ],
     },
     {
@@ -346,13 +360,13 @@ const Inscricao = () => {
     {
       title: "Formação Acadêmica:",
       dataInput: [
-        {
-          title: "Curso/are de formação :",
-          name: "curso",
-          value: telefone,
-          type: "select",
-          option: curso,
-        },
+        // {
+        //   title: "Curso/are de formação :",
+        //   name: "curso",
+
+        //   type: "select",
+        //   option: curso,
+        // },
         {
           title: "Nome da escola onde fez o primeiro Cíclo:",
           name: "escolaICiclo",
@@ -360,35 +374,35 @@ const Inscricao = () => {
           placeholder: "Escola onde fez o primeiro Cíclo ",
         },
 
-        {
-          title: "Municipio:",
-          name: "residenciaMunicipioEscolaICiclo",
-          value: residenciaMunicipioEscolaICiclo,
-          type: "select",
-          option: residenciaMunicipioEscolaICiclo,
-        },
+        // {
+        //   title: "Municipio:",
+        //   name: "residenciaMunicipioEscolaICiclo",
+        //   value: residenciaMunicipioEscolaICiclo,
+        //   type: "select",
+        //   option: residenciaMunicipioEscolaICiclo,
+        // },
         {
           title: "Bairro:",
           name: "residenciaBairroEscolaICiclo",
           value: residenciaBairroEscolaICiclo,
 
-          placeholder: "Municipio",
-          type: "select",
-          option: residenciaBairroEscolaICiclo,
-        },
-        {
-          title: "Provincia:",
-          name: "residenciaProvinciaEscolaICiclo",
-          value: residenciaProvinciaEscolaICiclo,
-          type: "select",
-          option: residenciaProvinciaEscolaICiclo,
-        },
-        {
-          title: "Pais:",
-          name: "residenciaPaisEscolaICiclo",
-          value: residenciaPaisEscolaICiclo,
+          placeholder: "Bairro",
           type: "text",
         },
+        // {
+        //   title: "Provincia:",
+        //   name: "residenciaProvinciaEscolaICiclo",
+        //   value: residenciaProvinciaEscolaICiclo,
+        //   type: "select",
+        //   option: residenciaProvinciaEscolaICiclo,
+        // },
+        // {
+        //   title: "Pais:",
+        //   name: "residenciaPaisEscolaICiclo",
+        //   value: residenciaPaisEscolaICiclo,
+        //   type: "select",
+        //   option: residenciaPaisEscolaICiclo,
+        // },
         {
           title: "Ano:",
           name: "anoEscolaICiclo",
@@ -397,49 +411,52 @@ const Inscricao = () => {
         },
         {
           title: "Nome da escola onde fez o Curso:",
-          name: "escolaICiclo",
-          value: escolaICiclo,
+          name: "escolaMedio",
+          value: escolaMedio,
           placeholder: "Escola onde fez o Curso de Saúde: ",
         },
 
         {
           title: "Municipio:",
-          name: "residenciaMunicipioEscolaICiclo",
-          value: residenciaMunicipioEscolaICiclo,
+          name: "residenciaMunicipioEscolaMedio",
+          value: residenciaMunicipioEscolaMedio,
           type: "select",
-          option: residenciaMunicipioEscolaICiclo,
+          option: [{ title: "a" }],
         },
-        {
-          title: "Bairro:",
-          name: "residenciaBairroEscolaICiclo",
-          value: residenciaBairroEscolaICiclo,
-
-          placeholder: "Municipio",
-          type: "select",
-          option: residenciaBairroEscolaICiclo,
-        },
-        {
-          title: "Provincia:",
-          name: "residenciaProvinciaEscolaICiclo",
-          value: residenciaProvinciaEscolaICiclo,
-          type: "select",
-          option: residenciaProvinciaEscolaICiclo,
-        },
-        {
-          title: "Pais:",
-          name: "residenciaPaisEscolaICiclo",
-          value: residenciaPaisEscolaICiclo,
-          type: "text",
-        },
+        // {
+        //   title: "Bairro:",
+        //   name: "residenciaBairroEscolaMedio",
+        //   value: residenciaBairroEscolaMedio,
+        //   placeholder: "Bairro",
+        //   type: "select",
+        //   option: residenciaMunicipioEscolaMedio,
+        // },
+        // {
+        //   title: "Provincia:",
+        //   name: "residenciaProvinciaEscolaMedio",
+        //   value: residenciaProvinciaEscolaMedio,
+        //   type: "select",
+        //   option: residenciaProvinciaEscolaMedio,
+        // },
+        // {
+        //   title: "Pais:",
+        //   name: "residenciaPaisEscolaMedio",
+        //   value: residenciaPaisEscolaMedio,
+        //   type: "select",
+        //   option:residenciaPaisEscolaMedio
+        // },
         {
           title: "Ano:",
-          name: "anoEscolaICiclo",
-          value: anoEscolaICiclo,
+          name: "anoEscolaMedio",
+          value: anoEscolaMedio,
           type: "number",
         },
       ],
     },
   ];
+
+  const OnSubmit = () => {};
+
   return (
     <Container>
       <Barner Slider={Slider}></Barner>

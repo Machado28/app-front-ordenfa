@@ -4,12 +4,28 @@ const Label = styled.label`
   color: #1f1f1fc2;
   font-size: 11px;
   font-weight: bold;
-  width: 32%;
+ min-width: 32%;
+  max-width: 100px;
+  
+  flex-wrap: wrap;
   height: 80px;
   margin-right:10px;
   display: ${(item)=>item.displayFlex ?item.displayFlex:'0'};
   flex-direction: ${(item)=>item.flexDirection ?item.flexDirection:'0'};
+   
+      
     
+    
+    @media screen and (min-width:0px) and ( max-width:900px ){
+       min-width: 100%;
+   
+    }
+    @media screen and (min-width:900px) and ( max-width:1300px ){
+       min-width: 48%;
+   
+    }
+      
+
 
   input {
     outline: none;

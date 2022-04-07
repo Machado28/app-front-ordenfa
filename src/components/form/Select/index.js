@@ -8,7 +8,7 @@ const Select = ({
   title,
   value,
   required = true,
-  
+  name,
   onClick,
   onChange,
   option=[
@@ -23,9 +23,9 @@ const Select = ({
   console.log("dados=>",);
   return (
     <Label for={title}>{title}:
-      <Select_ id={title} onClick={()=>onClick} value={title} name={title} onChange={(e)=>alert('evento=>',e.target.value)}>
+      <Select_ id={title} onClick={()=>onClick} value={title} name={name} onChange={(e)=>alert('evento=>',e.target.value)}>
         {option.map((item, index) => (
-          <option value={'estado'} key={index}>{item.title}</option>
+          <option value={value} key={index}>{item.title}</option>
         ))}
       </Select_>
     </Label>

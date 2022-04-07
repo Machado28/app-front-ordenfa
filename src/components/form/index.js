@@ -1,9 +1,10 @@
-import _Form from "./styled.js";
+import _Form, { ButtonArea } from "./styled.js";
 import Title from "./../Title/styled.js";
 import React, { memo, useState } from "react";
 import Input from "./Input/index.js";
 import Select from "./Select/index.js";
 import Radio from "./radio/index.js";
+import Button from "./Button/index.js";
 
 const Form = ({
   onChange,
@@ -17,23 +18,34 @@ const Form = ({
         {
           title: "Nome Completo",
           placeholder: "digite o nome completo",
+        
+          option:[{ title: "Estalagem" }]
+        },
+        {
+          title: "Nome Completo",
+          placeholder: "digite o nome completo",
+         type:'select',
+          option:[{ title: "Estalagem" }]
         },
       ],
     },
   ],
 }) => {
-   const renderChange= ()=>onChange()
+  const renderChange = () => onChange();
   return (
     <_Form onSubmit={onSubmit}>
+      
       <legend id="form-title" className="legend">
         {title}
       </legend>
       {dataGroup.map((group, number) => {
         return (
           <fieldset>
-            <legend id="group-title" className="legend">
-              {group.title}
-            </legend>
+            
+              <legend id="group-title" className="legend">
+                {group.title}
+              </legend>
+            
             {group.dataInput.map((item, index) => {
               return (
                 <>
@@ -59,7 +71,7 @@ const Form = ({
                           title={item.title}
                           placeholder={item.placeholder}
                           type={item.type}
-                          onChange={()=>onChange}
+                          onChange={() => onChange}
                           name={item.name}
                           value={item.value}
                         />
@@ -72,6 +84,9 @@ const Form = ({
           </fieldset>
         );
       })}
+      <ButtonArea>
+        <Button text={"Inscrever-se"}></Button>
+      </ButtonArea>
     </_Form>
   );
 };
