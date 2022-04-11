@@ -151,7 +151,7 @@ export default dataGroup;
 export const Slider = [
   {
     title: "Inscreva-se na ordenfa",
-    text: " texto informativo",
+    text: " Tua victoria está na oração Fervorosa que tu faz.Não desiita! Nunca páre de orar.A solução nunca foi parar de orar.Assim como Jacó, precisamos lutar com Deus. E não contra Deus.",
     button1: "Solicitar Carteira",
     button2: "Sobre",
     img: [

@@ -1,21 +1,19 @@
 import Barner from "../components/barner";
 import Footer from "../components/footer";
-import Form from "../components/form";
-import Container, { FormContainer } from "./styled";
-import dataGroup from "./data";
-import { useState } from 'react';
+
+import Container from "./styled";
+
+import { Slider } from "./data";
+import Services from "./../components/cardServices/index";
 
 const Home = () => {
-
-
   return (
-    <Container>
-      <Barner></Barner>
-      <FormContainer>
-        <Form dataGroup={dataGroup}></Form>
-      </FormContainer>
+    <>
+      <Barner Slider={Slider}></Barner>
+      <Services />
+
       <Footer></Footer>
-    </Container>
+    </>
   );
 };
 export default Home;
