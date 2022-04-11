@@ -458,13 +458,13 @@ const Inscricao = () => {
   const OnSubmit = () => {};
 
   return (
-    <Container>
+    <>
       <Barner Slider={Slider}></Barner>
       <FormContainer>
         <Form onChange={HandleOnChange} dataGroup={dataGroup}></Form>
       </FormContainer>
       <Footer></Footer>
-    </Container>
+    </>
   );
 };
 export default Inscricao;
