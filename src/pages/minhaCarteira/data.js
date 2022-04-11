@@ -37,6 +37,11 @@ const dataGroup = [
         placeholder: "Qual é o teu código de inscrição/BI/Passaporte",
       },
       {
+        required: true,
+        title: "upload: BI",
+        placeholder: "Qual é o teu código de inscrição/BI/Passaporte",
+      },
+      {
         type: "text",
         required: true,
         title: "Nome Completo ",
@@ -150,6 +155,7 @@ const dataGroup = [
         required: true,
         title: "Certificado autencicado  (formato : pdf,png)",
         placeholder: "Qual é o teu código de inscrição/BI/Passaporte",
+        type:"file"
       },
       
       {
@@ -188,20 +194,7 @@ const dataGroup = [
         title: "País",
         placeholder: "Em que país você nasceu ?",
       },
-      {
-        type: "file",
-        required: true,
-        title: "Foto tipo passe (obs: fundo branco)",
-         
-      },
-      {
-        type: "number",
-        required: true,
-        title: "Código de Comprovativo de quotas",
-         placeholder: "Qual é o código do comprovativo de quotas",
-     
-      },
-      ]
+             ]
   }
 ];
 
