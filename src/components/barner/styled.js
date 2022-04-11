@@ -4,19 +4,18 @@ import urlBackground from "./assets/img/Cooperativa-de-Servicos-Medicos-o-que-e-
 const Container = styled.div`
   width: 100%;
   height: 600px;
-  background-image: url(${urlBackground});
+  background-image: url(${(item)=> item ?item.imgSlider:'none'});
   background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  transition:0.7s ease-in;
 `;
 export default Container;
 
 const Opacity = styled(Container)`
   background: #021802a6;
-  
-
 `;
 export { Opacity };
 
@@ -27,17 +26,32 @@ const CenterText = styled(Container)`
   height: 130px;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom:8%;
+  margin-bottom: 8%;
+   transition:0.7s ease-in;
 `;
 export { CenterText };
 
 const CenterButton = styled(CenterText)`
-   flex-direction:row;
+  flex-direction: row;
   width: 83%;
   height: 100px;
+  margin-top: 30px;
+  transform: translateY(25px);
+   transition:0.7s ease-in;
 
-  transform:translateY(25px);
-  
-  
+  button.button {
+    height: 50px !important;
+    width:150px;
+    transition:0.5s ease-out;
+  }
+  button.first-button {
+    background-color: transparent;
+  }
+
+  button.button:hover {
+    background-color: #fff;
+    color: green;
+    
+  }
 `;
 export { CenterButton };

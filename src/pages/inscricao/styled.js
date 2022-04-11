@@ -1,25 +1,20 @@
 import styled from "styled-components";
-import Modal from "./../../components/Modal/styled.js";
-import Form from "./../../components/form/index";
 
 const Container = styled.div`
+  position: absolute;
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction:column;
-  flex-wrap:wrap;
-  align-items:center;
-  justify-content:space-between;
-  padding-top:10%;
+  height: 1000px;
+  margin-top: 70px;
 `;
-
 export default Container;
 
-const _Modal = styled(Modal)`
- background-color:#ccd3cd !important;
-  margin:100px;
-  height:600px;
-`;
+const FormContainer = styled.div`
+  width: 100%;
+  height: 900px;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
  
-export { _Modal };
+`;
+export { FormContainer };

@@ -3,6 +3,7 @@ import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import SubNav from "./subNav";
 
 const Nav = ({
   data = [
@@ -11,19 +12,32 @@ const Nav = ({
     },
   ],
 }) => {
+  const [click,setClick]= useState(false)
+const HandleClick=()=>{
+ return  setClick(!click)
+}
+  
   return (
     <_Nav>
       {data.map((item, index) => {
         return (
           <List>
-            {item.icon !== undefined ? (
-              <Link className="link" id={item.title} to={item.path}>
-                
-                {item.title}
-              </Link>
-            ) : (
-              <Link to={item.path}>{item.title}</Link>
-            )}
+            {
+              <>
+                {item.option!==undefined ? (
+                  <Link key={item.title}onClick={HandleClick}  className="link" id={item.title} to={item.path}>
+                    {item.title}
+                  </Link>
+                ) : (
+                  <Link  key={index}  to={item.path}>{item.title}</Link>
+                )}
+              </>
+            }
+           {
+             item.option ? <SubNav key={index*index+3} click={click} option={item.option}>
+               
+            </SubNav  >:<></>
+           } 
           </List>
         );
       })}
@@ -44,13 +58,17 @@ export const NavMobile = ({
   const HandleClick = () => {
     setClick(!click);
   };
-  
 
   console.log(click);
   return (
     <_NavMobile click={click}>
       <div id="menu-icon">
-        Menu { click ? <FaBars onClick={HandleClick} id="fa-bars"></FaBars>:<FaTimes onClick={HandleClick} id="Times"></FaTimes>}
+        Menu{" "}
+        {click ? (
+          <FaBars onClick={HandleClick} id="fa-bars"></FaBars>
+        ) : (
+          <FaTimes onClick={HandleClick} id="Times"></FaTimes>
+        )}
       </div>
       {data.map((item, index) => {
         return (
