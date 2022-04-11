@@ -11,7 +11,6 @@ const Home = () => {
     <>
       <Barner Slider={Slider}></Barner>
       <Services />
-
       <Footer></Footer>
     </>
   );
