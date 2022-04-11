@@ -40,6 +40,7 @@ const dataGroup = [
         required: true,
         title: "upload: BI",
         placeholder: "Qual é o teu código de inscrição/BI/Passaporte",
+        type:'file'
       },
       {
         type: "text",
