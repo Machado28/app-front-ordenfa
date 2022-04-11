@@ -10,7 +10,7 @@ import ModalDesconto from "../../components/ModalDescontoDirecto";
 const MinhaCarteira = () => {
   return (
     <Container>
-       <ModalDesconto></ModalDesconto>
+      
       <Barner Slider={Slider}></Barner>
       <FormContainer>
        
