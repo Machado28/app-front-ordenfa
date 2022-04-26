@@ -6,17 +6,17 @@ import Footer from "../../components/footer";
 import Container,{ FormContainer } from "../styled";
 import { Slider } from "./data";
 
-const MinhaCarteira = () => {
+const MinhaLincenca = () => {
   return (
     <>
       
       <Barner Slider={Slider}></Barner>
       <FormContainer>
        
-        <Form title={'Carteira profissional'} dataGroup={dataGroup}></Form>
+        <Form title={'Licença de estágio'} dataGroup={dataGroup}></Form>
       </FormContainer>
       <Footer></Footer>
     </>
   );
 };
-export default MinhaCarteira;
+export default MinhaLincenca;

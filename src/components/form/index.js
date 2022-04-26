@@ -90,4 +90,4 @@ const Form = ({
     </_Form>
   );
 };
-export default memo(Form);
+export default Form;

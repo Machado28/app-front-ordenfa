@@ -16,6 +16,7 @@ export default Container;
 
 const Opacity = styled(Container)`
   background: #021802a6;
+  padding-top:100px;
 `;
 export { Opacity };
 
@@ -26,7 +27,7 @@ const CenterText = styled(Container)`
   height: 130px;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 8%;
+  margin-bottom: 4%;
    transition:0.7s ease-in;
 `;
 export { CenterText };
@@ -35,7 +36,7 @@ const CenterButton = styled(CenterText)`
   flex-direction: row;
   width: 83%;
   height: 100px;
-  margin-top: 30px;
+  margin-top:4%;
   transform: translateY(25px);
    transition:0.7s ease-in;
 

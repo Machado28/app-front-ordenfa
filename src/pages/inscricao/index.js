@@ -6,8 +6,9 @@ import Footer from "../../components/footer";
 import { FormContainer } from "../styled";
 import React, { useEffect, useState } from "react";
 import api from "./../services/api/index";
+import angolaApi from "./../services/api/Angola/index";
 
- 
+
 
 const Inscricao = () => {
   const [nomeCompleto, setNomeCompleto] = useState([]);
@@ -65,14 +66,22 @@ const Inscricao = () => {
   const [residenciaPaisEscolaMedio, setResidenciaPaisEscolaMedio] =
     useState("");
   const [anoEscolaMedio, setAnoEscolaMedio] = useState("");
+
+
   useEffect(() => {
     async function GetMunicipio() {
-      const response = await api.get("/municipio");
+      const response = await angolaApi.get("geography/county?provincia",{
+
+      });
       setnMunicipio(response.data);
-     console.log(response.data)
+     console.log(response.data.id)
     }
     GetMunicipio()
-  }, [nMunicipio]);
+  }, []);
+
+
+
+
   const HandleOnChange = (e) => {
     console.log(e.target.value);
 
@@ -209,14 +218,14 @@ const Inscricao = () => {
           value: nComuna,
           placeholder: "digite Comuna/Distrito onde nasceu",
         },
-        // {
-        //   title: "Município de :",
-        //   name: "nMunicipio",
-        //   value: nMunicipio,
-        //   option: nMunicipio,
-        //   type: "select",
-        //   placeholder: "digite o municipio onde nasceu",
-        // },
+        {
+          title: "Município de :",
+          name: "nMunicipio",
+          value: nMunicipio,
+          option: nMunicipio,
+          type: "select",
+          placeholder: "digite o municipio onde nasceu",
+        },
         // {
         //   title: "Provincia de :",
         //   name: "nProvincia",
@@ -458,13 +467,13 @@ const Inscricao = () => {
   const OnSubmit = () => {};
 
   return (
-    <Container>
+    <>
       <Barner Slider={Slider}></Barner>
       <FormContainer>
-        <Form onChange={HandleOnChange} dataGroup={dataGroup}></Form>
+        <Form title={'Inscrição'} onChange={HandleOnChange} dataGroup={dataGroup}></Form>
       </FormContainer>
       <Footer></Footer>
-    </Container>
+    </>
   );
 };
 export default Inscricao;
