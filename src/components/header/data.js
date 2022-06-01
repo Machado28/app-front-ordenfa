@@ -22,13 +22,10 @@ const data = [
       
       },
       {
-        title: "2ª via  carteira profissional - técnico",
-        path: "/2minhaCarteiraTecnico",
+        title: "Licença de apredizagem (estágio)",
+        path: "/minhaLicencaTecnico",
       },
-      {
-        title: " 2ª via- Licença de apredizagem",
-        path: "/2minhaLicençaTecnico",
-      },
+      
     ],
   },
   {
