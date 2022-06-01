@@ -8,7 +8,11 @@ import { Slider } from "./data";
 
 const MinhaCarteira = () => {
   return (
+ 
     <>
+ 
+    <Container>
+ 
       
       <Barner Slider={Slider}></Barner>
       <FormContainer>
