@@ -24,7 +24,7 @@ const Radio = ({
            displayFlex="flex" id="label-1" for={title}>
     
       {option.map((item, index) => (
-        <Label_ id="label-2"for={item.title}>
+        <Label_ key={index+'c'} id="label-2"for={item.title}>
           {item.title}
         <Radio_
         key={index}

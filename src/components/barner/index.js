@@ -4,6 +4,7 @@ import Title from "./../Title/index";
 import Button from "../form/Button/index";
 import urlBackground from "./assets/img/Cooperativa-de-Servicos-Medicos-o-que-e-e-como-abrir-uma-2.jpeg";
 import React, { useState } from "react";
+import { Redirect } from 'react-router-dom';
 
 const title1 = ["Orderm Dos Enfermeiros Angolanos"];
 const paragraphy = [
@@ -21,8 +22,8 @@ const Barner = ({
     {
       title: "Cadastre",
       text: "fdfkldjglksdfjgkljdfkgjskdlfgjsldkgjdjglsdjgkldjglssngkdfgjskldjglkdjfgls",
-      button1: "sobre",
-      button2: "cadstrar-se",
+      button1:{nome:"Sobre",redirect:'/sobre'},
+      button2:{nome:'Solicitar',redirect:'/solicitacao'},
       img: [{ path: urlBackground }],
     },
   ],
@@ -63,12 +64,12 @@ const Barner = ({
         <CenterButton>
           <Button
             className={"button  first-button"}
-            text={Slider[sliderPositionText].button1}
-          ></Button>
+            text={Slider[sliderPositionText].button1.nome}
+          ><Redirect to={Slider[sliderPositionText].button1.redirect}></Redirect></Button>
           <Button
             className={"button  second-button"}
-            text={Slider[sliderPositionText].button2}
-          ></Button>
+            text={Slider[sliderPositionText].button2.nome}
+          > <Redirect to={Slider[sliderPositionText].button2.redirect}></Redirect></Button>
         </CenterButton>
       </Opacity>
     </Container>

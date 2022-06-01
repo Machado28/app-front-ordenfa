@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const Container = styled.h1`
-  font-size: 57px;
+  font-size:${((item)=>item.size!==undefined ?item.size:'57px')};
   margin-bottom:30px;
-  color: #fff;
+  color:${(({color})=>color!==undefined ?color:'#fff')};
  
 
 `;

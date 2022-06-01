@@ -7,9 +7,9 @@ import Radio from "./radio/index.js";
 import Button from "./Button/index.js";
 
 const Form = ({
-  onChange,
-  onClick,
-  onSubmit,
+  onChange=()=>{},
+  onClick=()=>{},
+  onSubmit=()=>{},
   title = "Cadastramento",
   dataGroup = [
     {
@@ -40,9 +40,9 @@ const Form = ({
       </legend>
       {dataGroup.map((group, number) => {
         return (
-          <fieldset>
+          <fieldset  key={number*6}>
             
-              <legend id="group-title" className="legend">
+              <legend  key={number+1} id="group-title" className="legend">
                 {group.title}
               </legend>
             
@@ -51,6 +51,7 @@ const Form = ({
                 <>
                   {item.type === "radio" ? (
                     <Radio
+                    key={index+1}
                       required={item.required}
                       title={item.title}
                       value={item.title}
@@ -62,11 +63,13 @@ const Form = ({
                     <>
                       {item.type === "select" ? (
                         <Select
+                        key={index+1}
                           title={item.title}
                           option={item.option}
                         ></Select>
                       ) : (
                         <Input
+                         key={index+3}
                           required={item.required}
                           title={item.title}
                           placeholder={item.placeholder}
