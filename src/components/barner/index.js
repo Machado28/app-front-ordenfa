@@ -5,6 +5,7 @@ import Button from "../form/Button/index";
 import urlBackground from "./assets/img/Cooperativa-de-Servicos-Medicos-o-que-e-e-como-abrir-uma-2.jpeg";
 import React, { useState } from "react";
 import { Redirect } from 'react-router-dom';
+import { RedirectExternal } from "src/util/redirect";
 
 const title1 = ["Orderm Dos Enfermeiros Angolanos"];
 const paragraphy = [
@@ -69,7 +70,8 @@ const Barner = ({
           <Button
             className={"button  second-button"}
             text={Slider[sliderPositionText].button2.nome}
-          > <Redirect to={Slider[sliderPositionText].button2.redirect}></Redirect></Button>
+            onClick={()=>RedirectExternal("https://app-ordefa-admin.herokuapp.com/#/login")}
+          > </Button>
         </CenterButton>
       </Opacity>
     </Container>
