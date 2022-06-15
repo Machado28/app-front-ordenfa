@@ -55,7 +55,7 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Album layout
+             Nossos Profissionais
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Something short and leading about the collection below—its contents,
@@ -68,8 +68,8 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
+              <Button variant="contained">Ver Tudo</Button>
+              
             </Stack>
           </Container>
         </Box>
@@ -87,12 +87,12 @@ export default function Album() {
                       // 16:9
                       pt: '56.25%',
                     }}
-                    image="https://source.unsplash.com/random"
+                    image="https://generatorfun.com/code/uploads/Random-Doctor-image-18.jpg"
                     alt="random"
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                     Enfermeiro
                     </Typography>
                     <Typography>
                       This is a media card. You can use this section to describe the
@@ -100,8 +100,7 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
+                    
                   </CardActions>
                 </Card>
               </Grid>
@@ -109,22 +108,7 @@ export default function Album() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          align="center"
-          color="text.secondary"
-          component="p"
-        >
-          Something here to give the footer a purpose!
-        </Typography>
-        <Copyright />
-      </Box>
-      {/* End footer */}
+      
     </ThemeProvider>
   );
 }

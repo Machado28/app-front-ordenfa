@@ -16,8 +16,8 @@ const Barner = ({
     {
       title: "Ordem dos Enfemeiros de Angoa",
       text: "fdfkldjglksdfjgkljdfkgjskdlfgjsldkgjdjglsdjgkldjglssngkdfgjskldjglkdjfgls",
-      button1: "ver mais...",
-      button2: "cadstrar-se",
+      button1: {nome:"Sobre",redirect:'/sobre'},
+      button2: {nome:'Solicitar',redirect:'/solicitacao'},
       img: [{ path: urlBackground }],
     },
     {

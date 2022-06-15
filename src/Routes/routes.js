@@ -3,6 +3,7 @@ import Route from "../Routes/index"
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Home from "../pages/index";
+import AboutUs from "src/pages/aboutUs";
  
 
 
@@ -14,6 +15,7 @@ const Routes = () => {
       <Header />
       <Switch>
         <Route exact path="/" component={Home}></Route>
+        <Route exact path="/sobre" component={AboutUs}></Route>
       </Switch>
     </BrowserRouter>
   );
