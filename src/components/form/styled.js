@@ -12,6 +12,7 @@ const Form_ = styled.form`
   align-items: center;
   flex-wrap: wrap;
   border-top-left-radius: 30px;
+  transform:translateY(-30vh);
   border-top-right-radius: 30px;
   // border-radius: 6px;
   //border: 1px solid #ccc;

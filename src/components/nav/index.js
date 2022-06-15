@@ -21,7 +21,7 @@ const HandleClick=()=>{
     <_Nav>
       {data.map((item, index) => {
         return (
-          <List>
+          <List key={index-'o'}>
             {
               <>
                 {item.option!==undefined ? (

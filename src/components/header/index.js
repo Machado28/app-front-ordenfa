@@ -11,10 +11,10 @@ const Header = () => {
   return (
     <_Header>
       <Top>
-       
+         
         <ul>
-          {dataTop.map((item) => (
-            <li>{item.title}</li>
+          {dataTop.map((item,index) => (
+            <li key={index} >{item.title}</li>
           ))}
         </ul>
       </Top>

@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
   margin:0;
   padding:0;
   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
 
 };
 #root2{
@@ -50,7 +51,9 @@ a{
     }
 }
 
-
+body{
+     font-family: 'Roboto', sans-serif;
+}
 input{
     width:250px;
     height:36px;
