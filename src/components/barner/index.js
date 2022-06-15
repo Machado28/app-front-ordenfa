@@ -64,10 +64,12 @@ const Barner = ({
         </CenterText>
         <CenterButton>
           <Button
+          redirect={Slider[sliderPositionText].button1.redirect}
             className={"button  first-button"}
             text={Slider[sliderPositionText].button1.nome}
           ><Redirect to={Slider[sliderPositionText].button1.redirect}></Redirect></Button>
           <Button
+           redirect={Slider[sliderPositionText].button2.redirect}
             className={"button  second-button"}
             text={Slider[sliderPositionText].button2.nome}
             onClick={()=>RedirectExternal("https://app-ordefa-admin.herokuapp.com/#/login")}

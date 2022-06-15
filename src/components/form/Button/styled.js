@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Button_ = styled.button`
+const Button_ = styled.a`
   background-color: ${(props) => (props.color ? props.color : "green")};
   color: ${(props) => (props.color ? "#fff" : "#fff")};
   padding: 10px 20px;
