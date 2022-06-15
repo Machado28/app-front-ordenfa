@@ -22,9 +22,9 @@ const Header = () => {
         <Logo src={logo} />
         <Nav id="nav-computer" data={data}></Nav>
 
-        <Link id="link-inscricao" to="/inscricao">
+        <a id="link-inscricao" href="https://localhost:3333/#/inscricao">
          Cadastre-se Aqui
-        </Link>
+        </a>
       </Container>
     </_Header>
   );
