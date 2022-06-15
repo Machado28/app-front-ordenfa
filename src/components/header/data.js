@@ -12,26 +12,18 @@ const data = [
     path: "/sobre",
     icon: <FaHome></FaHome>,
   },
+  {
+    title: "Servico",
+    path: "/servico",
+    icon: <FaHome></FaHome>,
+  },
+  {
+    title: "Contacto",
+    path: "/contactos",
+    icon: <FaHome></FaHome>,
+  },
 
-  {
-    title: "Minha carteira",
-    option: [
-      {
-        title: "carteira profissional- técnico",
-        path: "/minhaCarteiraTecnico",
-      
-      },
-      {
-        title: "Licença de apredizagem (estágio)",
-        path: "/minhaLicencaTecnico",
-      },
-      
-    ],
-  },
-  {
-    title: "inscrição",
-    path: "/inscricao",
-  },
+ 
 ];
 export default data;
 
