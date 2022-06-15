@@ -14,6 +14,7 @@ const Home = () => {
     <>
       <Barner Slider={Slider}></Barner>
       <Services />
+ 
   <CardAdvantage></CardAdvantage>
   <Album></Album>
   <Pricing></Pricing>
